@@ -54,6 +54,9 @@ docker ps
 
 docker logs container_id
 
+If you want to kill image,
+docker kill container-Name container-id
+
 
 Check Dockerfile include as follow:
 ----------------------------------------->>>>
