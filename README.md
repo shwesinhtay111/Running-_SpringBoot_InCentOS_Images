@@ -56,7 +56,7 @@ docker logs container_id
 
 
 Check Dockerfile include as follow:
------------------------------------------
+----------------------------------------->>>>
 
 FROM centos
 
@@ -66,4 +66,4 @@ VOLUME /tmp
 ADD /spring-boot-web-0.0.1SNAPSHOT.jar myapp.jar
 RUN sh -c 'touch /myapp.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/myapp.jar"]
-|--------------------------------------------------------------------------------------------------------|
+<---end----->
