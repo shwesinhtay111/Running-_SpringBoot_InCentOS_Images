@@ -36,3 +36,34 @@ ps -ef
 java -version
 
 yum install java
+
+
+in terminal,
+
+ls
+
+ls -ltr
+
+vi Dockerfile
+
+docker build -t spring-boot-docker .
+
+docker run -d -p 8080:8080 spring-boot-docker
+
+docker ps
+
+docker logs container_id
+
+
+Check Dockerfile include as follow:
+-----------------------------------------
+
+FROM centos
+
+RUN yum install -y java
+
+VOLUME /tmp
+ADD /spring-boot-web-0.0.1SNAPSHOT.jar myapp.jar
+RUN sh -c 'touch /myapp.jar'
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/myapp.jar"]
+|--------------------------------------------------------------------------------------------------------|
