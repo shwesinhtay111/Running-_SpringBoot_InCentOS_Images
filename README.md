@@ -74,7 +74,7 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/myapp.jar"
 
 
 Add byte-buddy in pom.xml file for java 11
--------------------------------------------
+====================================================
 <!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy -->
 <dependency>
     <groupId>net.bytebuddy</groupId>
