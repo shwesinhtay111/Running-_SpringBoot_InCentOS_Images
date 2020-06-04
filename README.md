@@ -70,3 +70,14 @@ ADD /spring-boot-web-0.0.1SNAPSHOT.jar myapp.jar
 RUN sh -c 'touch /myapp.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/myapp.jar"]
 <---end----->
+
+
+
+Add byte-buddy in pom.xml file for java 11
+-------------------------------------------
+<!-- https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy -->
+<dependency>
+    <groupId>net.bytebuddy</groupId>
+    <artifactId>byte-buddy</artifactId>
+    <version>1.8.0</version>
+</dependency>
